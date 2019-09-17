@@ -1,0 +1,19 @@
+{
+  "name": "@ottimizza/utils",
+  "version": "0.0.4b",
+  "description": "Utils for Ottimizza",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nukeer/ottimizza-utils.git"
+  },
+  "author": "Ottimizza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nukeer/ottimizza-utils/issues"
+  },
+  "homepage": "https://github.com/Nukeer/ottimizza-utils#readme",
+  "peerDependencies": {
+    "@angular/common": "^8.2.0",
+    "@angular/core": "^8.2.0"
+  }
+}
