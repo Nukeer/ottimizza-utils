@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@ottimizza/utils": [
+        "dist/ottimizza/utils"
+      ],
+      "@ottimizza/utils/*": [
+        "dist/ottimizza/utils/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

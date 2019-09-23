@@ -124,6 +124,41 @@
           }
         }
       }
+    },
+    "@ottimizza/utils": {
+      "projectType": "library",
+      "root": "projects/ottimizza/utils",
+      "sourceRoot": "projects/ottimizza/utils/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ottimizza/utils/tsconfig.lib.json",
+            "project": "projects/ottimizza/utils/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ottimizza/utils/src/test.ts",
+            "tsConfig": "projects/ottimizza/utils/tsconfig.spec.json",
+            "karmaConfig": "projects/ottimizza/utils/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ottimizza/utils/tsconfig.lib.json",
+              "projects/ottimizza/utils/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ottimizza"
 }
